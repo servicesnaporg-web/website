@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --forest-green: #2D5016;
+  --sage-green: #9CAF88;
+  --earth-brown: #8B4513;
+  --warm-beige: #F5F5DC;
+  --soft-olive: #6B8E23;
+  --natural-tan: #D2B48C;
+  --deep-forest: #1B4332;
 }
 
 @theme inline {
@@ -20,7 +27,40 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(135deg, #D2B48C 25%, #8B4513 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 100%);
+  }
+}
+
+@layer components {
+  .service-card {
+    @apply bg-white dark:bg-green-900 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-green-200 dark:border-green-700;
+  }
+  
+  .category-chip {
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer;
+  }
+  
+  .category-chip.active {
+    @apply bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-md;
+  }
+  
+  .category-chip:not(.active) {
+    @apply bg-green-50 dark:bg-green-800 text-green-700 dark:text-green-300 hover:bg-green-100 dark:hover:bg-green-700;
+  }
+  
+  .gradient-badge {
+    @apply bg-gradient-to-r from-green-600 to-emerald-600 text-white px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .search-input {
+    @apply w-full px-4 py-3 rounded-2xl border-2 border-green-200 dark:border-green-700 bg-white dark:bg-green-900 focus:border-green-600 focus:ring-2 focus:ring-green-600/20 transition-all duration-200;
+  }
 }
