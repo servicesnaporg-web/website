@@ -1,15 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --forest-green: #2D5016;
-  --sage-green: #9CAF88;
-  --earth-brown: #8B4513;
-  --warm-beige: #F5F5DC;
-  --soft-olive: #6B8E23;
-  --natural-tan: #D2B48C;
-  --deep-forest: #1B4332;
+  --background: #F5F1E8;
+  --foreground: #2C2C2C;
+  --primary: #4A5D3A;
+  --primary-light: #6B7C5B;
+  --accent: #E8A87C;
+  --warm-beige: #F5F1E8;
+  --cream: #FAF8F3;
+  --soft-brown: #8B7355;
+  --dark-brown: #3E2723;
+  --card-bg: #FFFFFF;
+  --border-color: #E0DDD6;
+  --white: #FFFFFF;
 }
 
 @theme inline {
@@ -21,13 +24,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #2C2C2C;
+    --foreground: #F5F1E8;
+    --card-bg: #3A3A3A;
+    --border-color: #4A4A4A;
   }
 }
 
 body {
-  background: linear-gradient(135deg, #D2B48C 25%, #8B4513 100%);
+  background: var(--warm-beige);
   color: var(--foreground);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   min-height: 100vh;
@@ -35,7 +40,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(135deg, #1a2e1a 0%, #2d4a2d 100%);
+    background: var(--background);
   }
 }
 
