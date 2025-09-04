@@ -101,7 +101,7 @@ export default function Home() {
             </p>
             <p className="text-lg leading-relaxed" style={{color: 'var(--soft-brown)'}}>
               Whether you need home repairs, professional photography, cleaning services, or any other local expertise, 
-              ServiceSnap connects you with verified providers who understand your community's unique needs.
+              ServiceSnap connects you with verified providers who understand your community&apos;s unique needs.
             </p>
           </div>
         </section>
