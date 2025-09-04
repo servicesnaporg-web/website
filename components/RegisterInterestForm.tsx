@@ -24,7 +24,7 @@ export default function RegisterInterestForm() {
       if (!res.ok) {
         setStatus({ ok: false, message: data?.error || "Submission failed" });
       } else {
-        setStatus({ ok: true, message: "Thanks! We'll be in touch." });
+        setStatus({ ok: true, message: "Thanks! We&apos;ll be in touch." });
         setForm({ role: "customer", name: "", email: "", city: "" });
       }
     } catch {
