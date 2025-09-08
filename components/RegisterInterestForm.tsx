@@ -101,7 +101,7 @@ export default function RegisterInterestForm() {
               required 
               value={form.name} 
               onChange={(e) => update('name', e.target.value)} 
-              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-gray-500" 
+              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-green-800" 
               suppressHydrationWarning
             />
             <div className="absolute right-4 top-1/2 -translate-y-1/2 text-green-400">
@@ -117,7 +117,7 @@ export default function RegisterInterestForm() {
               required 
               value={form.email} 
               onChange={(e) => update('email', e.target.value)} 
-              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-gray-500" 
+              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-green-800" 
               suppressHydrationWarning
             />
             <div className="absolute right-4 top-1/2 -translate-y-1/2 text-green-400">
@@ -131,7 +131,7 @@ export default function RegisterInterestForm() {
               placeholder="City (optional)" 
               value={form.city} 
               onChange={(e) => update('city', e.target.value)} 
-              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-gray-500" 
+              className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-gray-700 placeholder:text-green-800" 
               suppressHydrationWarning
             />
             <div className="absolute right-4 top-1/2 -translate-y-1/2 text-green-400">
