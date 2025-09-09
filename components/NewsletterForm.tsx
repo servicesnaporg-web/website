@@ -41,7 +41,7 @@ export default function NewsletterForm() {
             placeholder="Enter your email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg placeholder:text-green-400"
+            className="w-full rounded-2xl border-2 border-green-200 px-6 py-4 bg-white shadow-lg focus:border-green-500 focus:ring-4 focus:ring-green-500/20 transition-all duration-300 text-lg text-black placeholder:text-green-400"
             suppressHydrationWarning
           />
           <div className="absolute right-4 top-1/2 -translate-y-1/2 text-green-400">
